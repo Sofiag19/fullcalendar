@@ -12,10 +12,43 @@
 </head>
 
 <body>
-
   <div class="container">
-    <div id='calendar'></>
+    <div class="row">
+      <h1 class="text-center w-100 mb-4">Basic Agenda</h1>
+    </div>
+    <div class="row">
+      <h3>Aggiungi un impegno</h3>
+    </div>
+    <div class="row mb-4">
+      <form action="new.php" method="POST">
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="impegno">Impegno</label>
+            <input type="text" name="impegno" class="form-control">
+          </div>
+          <div class="form-group col">
+            <label for="giorno">Giorno</label>
+            <input type="date" name="giorno" class="form-control">
+          </div>
+          <div class="form-group col">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" class="form-control">
+          </div>
+          <div class="form-group col">
+            <label for="cognome">Cognome</label>
+            <input type="text" name="cognome" class="form-control">
+          </div>
+        </div>
+        <input type="submit" value="Salva" class="btn btn-success">
+      </form>
+    </div>
+    <div class="row">
+      <div id='calendar'></div>
+    </div>
   </div>
+
+
+
 
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

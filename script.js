@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
   $('#calendar').fullCalendar({
-    weekends: false,
     defaultView: 'month',
     header: {
       left: 'prev,next today',
